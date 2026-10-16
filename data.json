@@ -1,0 +1,118 @@
+{
+  "stagione": "2026/2027",
+  "giornata": 1,
+  "squadre": [
+    {
+      "nome": "Lo§tallones",
+      "pg": 1,
+      "v": 1,
+      "p": 0,
+      "s": 0,
+      "gf": null,
+      "gs": null,
+      "logo": "img/lostallones.webp"
+    },
+    {
+      "nome": "Merli FN",
+      "pg": 1,
+      "v": 1,
+      "p": 0,
+      "s": 0,
+      "gf": null,
+      "gs": null,
+      "logo": "img/merli-fn.webp"
+    },
+    {
+      "nome": "B.P. Eagles",
+      "pg": 1,
+      "v": 1,
+      "p": 0,
+      "s": 0,
+      "gf": null,
+      "gs": null,
+      "logo": "img/bp-eagles.webp"
+    },
+    {
+      "nome": "Sobri & Sinceri",
+      "pg": 1,
+      "v": 0,
+      "p": 0,
+      "s": 1,
+      "gf": null,
+      "gs": null,
+      "logo": "img/sobri-sinceri.webp"
+    },
+    {
+      "nome": "Titani",
+      "pg": 1,
+      "v": 0,
+      "p": 0,
+      "s": 1,
+      "gf": null,
+      "gs": null,
+      "logo": "img/titani.webp"
+    },
+    {
+      "nome": "Jägermaister",
+      "pg": 1,
+      "v": 0,
+      "p": 0,
+      "s": 1,
+      "gf": null,
+      "gs": null,
+      "logo": "img/jagermaister.webp"
+    }
+  ],
+  "marcatori": [
+    {
+      "giocatore": "Pirovano",
+      "squadra": "Titani",
+      "gol": 4
+    },
+    {
+      "giocatore": "Verrusio",
+      "squadra": "Merli FN",
+      "gol": 4
+    },
+    {
+      "giocatore": "Rossetti",
+      "squadra": "Lo§tallones",
+      "gol": 3
+    },
+    {
+      "giocatore": "Belingheri",
+      "squadra": "Merli FN",
+      "gol": 3
+    },
+    {
+      "giocatore": "Pelle",
+      "squadra": "Jägermaister",
+      "gol": 2
+    },
+    {
+      "giocatore": "Borgo",
+      "squadra": "Jägermaister",
+      "gol": 2
+    },
+    {
+      "giocatore": "Sorrentino",
+      "squadra": "Lo§tallones",
+      "gol": 2
+    },
+    {
+      "giocatore": "Chri",
+      "squadra": "B.P. Eagles",
+      "gol": 2
+    },
+    {
+      "giocatore": "Gadeschi",
+      "squadra": "Lo§tallones",
+      "gol": 1
+    },
+    {
+      "giocatore": "Mandelli",
+      "squadra": "Lo§tallones",
+      "gol": 1
+    }
+  ]
+}

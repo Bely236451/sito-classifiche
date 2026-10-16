@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0f0720">
+<title>Campetto League · Classifica e marcatori</title>
+<meta name="description" content="Classifica e marcatori della Campetto League 2026/2027">
+<link rel="icon" href="img/logo-lega.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700&family=Barlow+Condensed:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="hero">
+  <img src="img/logo-lega.png" alt="Logo Campetto League" width="104" height="104">
+  <h1 class="display">Campetto<br>League</h1>
+  <span class="pill" id="pill">Stagione 2026/2027</span>
+  <div class="stats" id="stats"></div>
+</header>
+<nav role="tablist" aria-label="Sezioni">
+  <button class="tab" role="tab" data-tab="classifica" aria-selected="true">Classifica</button>
+  <button class="tab" role="tab" data-tab="marcatori" aria-selected="false">Marcatori</button>
+</nav>
+<main>
+  <br>
+  <section id="panel-classifica" role="tabpanel">
+    <div class="cols"><span>#</span><span>Squadra</span><span>PG</span><span>V</span><span>P</span><span>S</span><span class="gx">GF</span><span class="gx">GS</span><span>DR</span><span>PT</span></div>
+    <div id="squadre"></div>
+    <p class="hint">Tocca una squadra per vedere i dettagli. A parità di punti vale la differenza reti.</p>
+  </section>
+  <section id="panel-marcatori" role="tabpanel" hidden>
+    <div class="podio" id="podio"></div>
+    <div class="chips" id="chips" aria-label="Filtra per squadra"></div>
+    <div id="lista"></div>
+  </section>
+</main>
+<dialog id="dlg" aria-label="Dettaglio squadra"></dialog>
+<footer><img src="img/logo-lega.png" alt=""><span id="agg">Caricamento…</span><br><br>© 2026 Campetto League</footer>
+<script src="script.js"></script>
+</body>
+</html>
