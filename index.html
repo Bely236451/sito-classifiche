@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#0f0720">
-<title>Campetto League · Classifica e marcatori</title>
+<title>Campetto League · Sito Ufficiale</title>
 <meta name="description" content="Classifica e marcatori della Campetto League 2026/2027">
 <link rel="icon" href="img/logo-lega.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,9 +21,9 @@
 <nav role="tablist" aria-label="Sezioni">
   <button class="tab" role="tab" data-tab="classifica" aria-selected="true">Classifica</button>
   <button class="tab" role="tab" data-tab="marcatori" aria-selected="false">Marcatori</button>
+  <button class="tab" role="tab" data-tab="calendario" aria-selected="false">Calendario</button>
 </nav>
 <main>
-  <br>
   <section id="panel-classifica" role="tabpanel">
     <div class="cols"><span>#</span><span>Squadra</span><span>PG</span><span>V</span><span>P</span><span>S</span><span class="gx">GF</span><span class="gx">GS</span><span>DR</span><span>PT</span></div>
     <div id="squadre"></div>
@@ -34,9 +34,15 @@
     <div class="chips" id="chips" aria-label="Filtra per squadra"></div>
     <div id="lista"></div>
   </section>
+  <section id="panel-calendario" role="tabpanel" hidden>
+    <div id="nextm"></div>
+    <div class="chips" id="cchips" aria-label="Filtra per squadra"></div>
+    <div class="gps" id="gps" role="group" aria-label="Giornata"></div>
+    <div id="cal"></div>
+  </section>
 </main>
 <dialog id="dlg" aria-label="Dettaglio squadra"></dialog>
-<footer><img src="img/logo-lega.png" alt=""><span id="agg">Caricamento…</span><br><br>© 2026 Campetto League</footer>
+<footer><img src="img/logo-lega.png" alt=""><span id="agg">Caricamento…</span><br>© 2026 Campetto League</footer>
 <script src="script.js"></script>
 </body>
 </html>

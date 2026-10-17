@@ -13,3 +13,7 @@ Modifica solo `data.json`.
 ## Pubblicare gratis
 **Netlify:** app.netlify.com/drop e trascina l'intera cartella (con `img/`).
 **Vercel + GitHub:** carica la cartella su GitHub, poi su vercel.com "Add New > Project", importa il repo, Deploy.
+
+## Calendario
+In `data.json`, sezione `calendario` (e `playoff`). Per inserire un risultato compila `gc` (gol di chi gioca in casa, il primo nome) e `go` (gol dell'ospite) al posto di `null`. La partita passa da "VS" al punteggio e la "Prossima partita" in alto si aggiorna da sola. I nomi delle squadre devono essere uguali a quelli in `squadre`.
+Nei playoff, quando si conoscono le squadre, sostituisci "2ª classificata" ecc. con il nome della squadra.

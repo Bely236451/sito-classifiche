@@ -1,6 +1,6 @@
 {
   "stagione": "2026/2027",
-  "giornata": 1,
+  "giornata": 2,
   "squadre": [
     {
       "nome": "Lo§tallones",
@@ -8,18 +8,18 @@
       "v": 1,
       "p": 0,
       "s": 0,
-      "gf": null,
-      "gs": null,
+      "gf": 9,
+      "gs": 4,
       "logo": "img/lostallones.webp"
     },
     {
       "nome": "Merli FN",
-      "pg": 1,
-      "v": 1,
+      "pg": 2,
+      "v": 2,
       "p": 0,
       "s": 0,
-      "gf": null,
-      "gs": null,
+      "gf": 14,
+      "gs": 11,
       "logo": "img/merli-fn.webp"
     },
     {
@@ -28,8 +28,8 @@
       "v": 1,
       "p": 0,
       "s": 0,
-      "gf": null,
-      "gs": null,
+      "gf": 3,
+      "gs": 2,
       "logo": "img/bp-eagles.webp"
     },
     {
@@ -38,8 +38,8 @@
       "v": 0,
       "p": 0,
       "s": 1,
-      "gf": null,
-      "gs": null,
+      "gf": 2,
+      "gs": 3,
       "logo": "img/sobri-sinceri.webp"
     },
     {
@@ -48,18 +48,18 @@
       "v": 0,
       "p": 0,
       "s": 1,
-      "gf": null,
-      "gs": null,
+      "gf": 5,
+      "gs": 7,
       "logo": "img/titani.webp"
     },
     {
       "nome": "Jägermaister",
-      "pg": 1,
+      "pg": 2,
       "v": 0,
       "p": 0,
-      "s": 1,
-      "gf": null,
-      "gs": null,
+      "s": 2,
+      "gf": 10,
+      "gs": 16,
       "logo": "img/jagermaister.webp"
     }
   ],
@@ -72,7 +72,7 @@
     {
       "giocatore": "Verrusio",
       "squadra": "Merli FN",
-      "gol": 4
+      "gol": 6
     },
     {
       "giocatore": "Rossetti",
@@ -82,12 +82,12 @@
     {
       "giocatore": "Belingheri",
       "squadra": "Merli FN",
-      "gol": 3
+      "gol": 7
     },
     {
       "giocatore": "Pelle",
       "squadra": "Jägermaister",
-      "gol": 2
+      "gol": 3
     },
     {
       "giocatore": "Borgo",
@@ -105,14 +105,310 @@
       "gol": 2
     },
     {
-      "giocatore": "Gadeschi",
-      "squadra": "Lo§tallones",
+      "giocatore": "Fatjon",
+      "squadra": "Merli FN",
       "gol": 1
     },
     {
-      "giocatore": "Mandelli",
-      "squadra": "Lo§tallones",
-      "gol": 1
+      "giocatore": "Deli",
+      "squadra": "Jägermaister",
+      "gol": 3
+    }
+  ],
+  "calendario": [
+    {
+      "giornata": 1,
+      "partite": [
+        {
+          "casa": "Lo§tallones",
+          "ospite": "Jägermaister",
+          "data": "2026-10-02",
+          "gc": 9,
+          "go": 4
+        },
+        {
+          "casa": "B.P. Eagles",
+          "ospite": "Sobri & Sinceri",
+          "data": "2026-10-10",
+          "gc": 3,
+          "go": 2
+        },
+        {
+          "casa": "Titani",
+          "ospite": "Merli FN",
+          "data": "2026-10-09",
+          "gc": 5,
+          "go": 7
+        }
+      ]
+    },
+    {
+      "giornata": 2,
+      "partite": [
+        {
+          "casa": "Jägermaister",
+          "ospite": "Merli FN",
+          "data": "2026-10-16",
+          "gc": 6,
+          "go": 7
+        },
+        {
+          "casa": "Sobri & Sinceri",
+          "ospite": "Titani",
+          "data": "2026-10-24",
+          "gc": null,
+          "go": null
+        },
+        {
+          "casa": "B.P. Eagles",
+          "ospite": "Lo§tallones",
+          "data": "2026-10-23",
+          "gc": null,
+          "go": null
+        }
+      ]
+    },
+    {
+      "giornata": 3,
+      "partite": [
+        {
+          "casa": "B.P. Eagles",
+          "ospite": "Jägermaister",
+          "data": "2026-10-30",
+          "gc": null,
+          "go": null
+        },
+        {
+          "casa": "Titani",
+          "ospite": "Lo§tallones",
+          "data": "2026-10-31",
+          "gc": null,
+          "go": null
+        },
+        {
+          "casa": "Sobri & Sinceri",
+          "ospite": "Merli FN",
+          "data": "2026-11-06",
+          "gc": null,
+          "go": null
+        }
+      ]
+    },
+    {
+      "giornata": 4,
+      "partite": [
+        {
+          "casa": "Merli FN",
+          "ospite": "B.P. Eagles",
+          "data": "2026-11-14",
+          "gc": null,
+          "go": null
+        },
+        {
+          "casa": "Lo§tallones",
+          "ospite": "Sobri & Sinceri",
+          "data": "2026-11-20",
+          "gc": null,
+          "go": null
+        },
+        {
+          "casa": "Jägermaister",
+          "ospite": "Titani",
+          "data": "2026-11-21",
+          "gc": null,
+          "go": null
+        }
+      ]
+    },
+    {
+      "giornata": 5,
+      "partite": [
+        {
+          "casa": "B.P. Eagles",
+          "ospite": "Titani",
+          "data": "2026-11-27",
+          "gc": null,
+          "go": null
+        },
+        {
+          "casa": "Jägermaister",
+          "ospite": "Sobri & Sinceri",
+          "data": "2026-11-28",
+          "gc": null,
+          "go": null
+        },
+        {
+          "casa": "Merli FN",
+          "ospite": "Lo§tallones",
+          "data": "2026-12-11",
+          "gc": null,
+          "go": null
+        }
+      ]
+    },
+    {
+      "giornata": 6,
+      "partite": [
+        {
+          "casa": "Lo§tallones",
+          "ospite": "Jägermaister",
+          "data": "2027-01-15",
+          "gc": null,
+          "go": null
+        },
+        {
+          "casa": "B.P. Eagles",
+          "ospite": "Sobri & Sinceri",
+          "data": "2027-01-16",
+          "gc": null,
+          "go": null
+        },
+        {
+          "casa": "Titani",
+          "ospite": "Merli FN",
+          "data": "2027-01-22",
+          "gc": null,
+          "go": null
+        }
+      ]
+    },
+    {
+      "giornata": 7,
+      "partite": [
+        {
+          "casa": "Jägermaister",
+          "ospite": "Merli FN",
+          "data": "2027-01-30",
+          "gc": null,
+          "go": null
+        },
+        {
+          "casa": "Sobri & Sinceri",
+          "ospite": "Titani",
+          "data": "2027-02-05",
+          "gc": null,
+          "go": null
+        },
+        {
+          "casa": "B.P. Eagles",
+          "ospite": "Lo§tallones",
+          "data": "2027-02-06",
+          "gc": null,
+          "go": null
+        }
+      ]
+    },
+    {
+      "giornata": 8,
+      "partite": [
+        {
+          "casa": "B.P. Eagles",
+          "ospite": "Jägermaister",
+          "data": "2027-02-12",
+          "gc": null,
+          "go": null
+        },
+        {
+          "casa": "Titani",
+          "ospite": "Lo§tallones",
+          "data": "2027-02-13",
+          "gc": null,
+          "go": null
+        },
+        {
+          "casa": "Sobri & Sinceri",
+          "ospite": "Merli FN",
+          "data": "2027-02-19",
+          "gc": null,
+          "go": null
+        }
+      ]
+    },
+    {
+      "giornata": 9,
+      "partite": [
+        {
+          "casa": "Merli FN",
+          "ospite": "B.P. Eagles",
+          "data": "2027-02-27",
+          "gc": null,
+          "go": null
+        },
+        {
+          "casa": "Lo§tallones",
+          "ospite": "Sobri & Sinceri",
+          "data": "2027-03-05",
+          "gc": null,
+          "go": null
+        },
+        {
+          "casa": "Jägermaister",
+          "ospite": "Titani",
+          "data": "2027-03-06",
+          "gc": null,
+          "go": null
+        }
+      ]
+    },
+    {
+      "giornata": 10,
+      "partite": [
+        {
+          "casa": "B.P. Eagles",
+          "ospite": "Titani",
+          "data": "2027-03-12",
+          "gc": null,
+          "go": null
+        },
+        {
+          "casa": "Jägermaister",
+          "ospite": "Sobri & Sinceri",
+          "data": "2027-03-13",
+          "gc": null,
+          "go": null
+        },
+        {
+          "casa": "Merli FN",
+          "ospite": "Lo§tallones",
+          "data": "2027-03-20",
+          "gc": null,
+          "go": null
+        }
+      ]
+    }
+  ],
+  "playoff": [
+    {
+      "titolo": "Semifinale 1",
+      "casa": "2ª classificata",
+      "ospite": "5ª classificata",
+      "data": "2027-04-02",
+      "gc": null,
+      "go": null
+    },
+    {
+      "titolo": "Semifinale 2",
+      "casa": "3ª classificata",
+      "ospite": "4ª classificata",
+      "data": "2027-04-03",
+      "gc": null,
+      "go": null
+    },
+    {
+      "titolo": "Finale tabellone playoff",
+      "casa": "Vincitrice semifinale 1",
+      "ospite": "Vincitrice semifinale 2",
+      "data": "2027-04-16",
+      "gc": null,
+      "go": null
+    },
+    {
+      "titolo": "Grande Finale",
+      "casa": "Vincitrice playoff",
+      "ospite": "1ª classificata",
+      "data": "2027-04-30",
+      "gc": null,
+      "go": null
     }
   ]
 }

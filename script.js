@@ -61,6 +61,7 @@ function setTab(name) {
   document.querySelectorAll('.tab').forEach(b => b.setAttribute('aria-selected', b.dataset.tab === name));
   document.querySelectorAll('[role=tabpanel]').forEach(p => p.hidden = p.id !== 'panel-' + name);
   history.replaceState(null, '', '#' + name);
+  if (name === 'calendario') centerPill();
   scrollTo({ top: Math.min(scrollY, $('nav').offsetTop), behavior: 'smooth' });
 }
 
@@ -76,7 +77,63 @@ fetch(DATA_URL, { cache: 'no-cache' }).then(r => r.json()).then(d => {
   teams = d.squadre.map((s, i) => ({ ...s, pt: s.v * 3 + s.p, dr: s.gf != null && s.gs != null ? s.gf - s.gs : null, i }))
     .sort((a, b) => b.pt - a.pt || (b.dr ?? 0) - (a.dr ?? 0) || a.i - b.i);
   scorers = [...d.marcatori].sort((a, b) => b.gol - a.gol);
-  renderStats(d); renderTeams(); renderScorers();
+  renderStats(d); renderTeams(); renderScorers(); initCal(d);
   $('#agg').textContent = `Aggiornato alla Giornata ${d.giornata}`;
-  setTab(location.hash === '#marcatori' ? 'marcatori' : 'classifica');
+  setTab(['marcatori', 'calendario'].includes(location.hash.slice(1)) ? location.hash.slice(1) : 'classifica');
 }).catch(() => { $('#agg').textContent = 'Impossibile caricare i dati. Controlla data.json.'; });
+
+/* ---------- CALENDARIO ---------- */
+let cal = [], playoff = [], calSel = '1', calTeam = 'all';
+const fmtD = iso => { const [y, m, d] = iso.split('-').map(Number); return new Date(y, m - 1, d); };
+const dayLbl = iso => new Intl.DateTimeFormat('it-IT', { weekday: 'short', day: 'numeric', month: 'short' }).format(fmtD(iso)).replace(/\./g, '');
+const played = m => m.gc != null && m.go != null;
+const allMatches = () => [...cal.flatMap(g => g.partite.map(m => ({ ...m, g: g.giornata }))), ...playoff.map(m => ({ ...m, po: true }))]
+  .sort((a, b) => a.data.localeCompare(b.data));
+const nextMatch = () => allMatches().find(m => !played(m));
+
+function initCal(d) {
+  cal = d.calendario || []; playoff = d.playoff || [];
+  const n = nextMatch();
+  calSel = n ? (n.po ? 'po' : String(n.g)) : 'po';
+  renderCal();
+}
+
+const mt = (n, w) => { const t = teams.find(x => x.nome === n);
+  return `<div class="mt ${w ? 'win' : ''}">${t ? `<img src="${t.logo}" alt="">` : '<span class="ph">?</span>'}<span>${esc(n)}</span></div>`; };
+
+function card(m, nx) {
+  const p = played(m), isN = nx && nx.casa === m.casa && nx.data === m.data;
+  return `<article class="mc fade ${isN ? 'nx' : ''}"><div class="mh"><span>${m.po ? esc(m.titolo) : 'Giornata ' + m.g}</span>
+    <span>${isN ? '<em class="tag">Prossima</em> ' : ''}${dayLbl(m.data)}</span></div>
+    <div class="mb">${mt(m.casa, p && m.gc > m.go)}<div class="sco num ${p ? '' : 'vs'}">${p ? `${m.gc}<i>–</i>${m.go}` : 'VS'}</div>${mt(m.ospite, p && m.go > m.gc)}</div></article>`;
+}
+
+function renderCal() {
+  const nx = nextMatch();
+  if (nx) {
+    const days = Math.round((fmtD(nx.data) - new Date().setHours(0, 0, 0, 0)) / 864e5);
+    const when = days < 0 ? 'Risultato in arrivo' : days === 0 ? 'Oggi' : days === 1 ? 'Domani' : `Tra ${days} giorni`;
+    $('#nextm').innerHTML = `<div class="nextm fade"><small>Prossima partita · ${when}</small>
+      <div class="nm">${esc(nx.casa)} <span>vs</span> ${esc(nx.ospite)}</div><small class="cap">${dayLbl(nx.data)}</small></div>`;
+  } else $('#nextm').innerHTML = '';
+  $('#cchips').innerHTML = `<button class="cchip all" data-f="all" aria-pressed="${calTeam === 'all'}">Tutte</button>` +
+    teams.map(t => `<button class="cchip" data-f="${esc(t.nome)}" aria-pressed="${calTeam === t.nome}"><img src="${t.logo}" alt="">${esc(t.nome)}</button>`).join('');
+  $('#gps').hidden = calTeam !== 'all';
+  $('#gps').innerHTML = cal.map(g => `<button class="gp ${nx && nx.g === g.giornata ? 'nx' : ''}" data-g="${g.giornata}" aria-pressed="${calSel == g.giornata}">G${g.giornata}</button>`).join('')
+    + `<button class="gp ${nx && nx.po ? 'nx' : ''}" data-g="po" aria-pressed="${calSel === 'po'}">Playoff</button>`;
+  const list = calTeam !== 'all' ? allMatches().filter(m => !m.po && (m.casa === calTeam || m.ospite === calTeam))
+    : allMatches().filter(m => calSel === 'po' ? m.po : !m.po && String(m.g) === String(calSel));
+  $('#cal').innerHTML = list.map(m => card(m, nx)).join('');
+  centerPill();
+}
+
+function centerPill() {
+  const el = $('.gp[aria-pressed=true]'), box = $('#gps');
+  if (el && box && el.offsetWidth) box.scrollLeft = el.offsetLeft - box.clientWidth / 2 + el.offsetWidth / 2;
+}
+
+document.addEventListener('click', e => {
+  const gp = e.target.closest('.gp'), ct = e.target.closest('.cchip');
+  if (gp) { calSel = gp.dataset.g; renderCal(); }
+  if (ct) { calTeam = ct.dataset.f; renderCal(); }
+});
