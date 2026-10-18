@@ -47,14 +47,22 @@ function renderScorers() {
     : '<p class="hint">Nessun marcatore tra i primi della classifica per questa squadra.</p>';
 }
 
+function rosterHTML(s) {
+  const list = [...(s.rosa || [])].sort((a, b) => !!b.portiere - !!a.portiere || (a.num ?? 999) - (b.num ?? 999));
+  if (!list.length) return '';
+  return `<h3 class="display rh">Rosa · ${list.length} giocatori</h3><ul class="rosa">` + list.map(p => `
+    <li class="pl"><span class="pn num">${p.num ?? '–'}</span><span class="pname">${esc(p.nome)}</span>
+    ${p.capitano ? '<em class="bd c" title="Capitano">C</em>' : ''}${p.portiere ? '<em class="bd g" title="Portiere">POR</em>' : ''}</li>`).join('') + '</ul>';
+}
+
 function openTeam(i) {
-  const s = teams[i], mine = scorers.filter(p => p.squadra === s.nome);
+  const s = teams[i];
   $('#dlg').innerHTML = `<img class="big" src="${s.logo}" alt="Logo ${esc(s.nome)}">
     <h2 class="display">${esc(s.nome)}</h2><span class="pill">${i + 1}° posto · ${s.pt} punti</span>
     <div class="kv">${[['PG', s.pg], ['V', s.v], ['P', s.p], ['S', s.s], ['DR', s.dr ?? '–']].map(([k, v]) => `<div><b class="num">${v}</b><span>${k}</span></div>`).join('')}</div>
-    <p class="mini">${mine.length ? '<b>Marcatori:</b> ' + mine.map(p => `${esc(p.giocatore)} (${p.gol})`).join(', ') : 'Nessun marcatore in classifica.'}</p>
+    ${rosterHTML(s)}
     <button class="close" autofocus>Chiudi</button>`;
-  $('#dlg').showModal();
+  $('#dlg').showModal(); $('#dlg').scrollTop = 0;
 }
 
 function setTab(name) {

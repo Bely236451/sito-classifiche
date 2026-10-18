@@ -10,7 +10,21 @@
       "s": 0,
       "gf": 9,
       "gs": 4,
-      "logo": "img/lostallones.webp"
+      "logo": "img/lostallones.webp",
+      "rosa": [
+        {"nome": "Rogazzo", "num": 21, "capitano": true},
+        {"nome": "Mandelli", "num": 28},
+        {"nome": "Cuzzilla", "num": 17},
+        {"nome": "Sorrentino", "num": 7},
+        {"nome": "Chiarini", "num": 27},
+        {"nome": "Zancanari", "num": 10},
+        {"nome": "Ligato", "num": 26},
+        {"nome": "Minta", "num": 4},
+        {"nome": "Spreafico", "num": 1},
+        {"nome": "Croce", "num": 13},
+        {"nome": "Gadeschi", "num": 88, "portiere": true},
+        {"nome": "Rossetti", "num": 9}
+      ]
     },
     {
       "nome": "Merli FN",
@@ -19,8 +33,18 @@
       "p": 0,
       "s": 0,
       "gf": 14,
-      "gs": 11,
-      "logo": "img/merli-fn.webp"
+      "gs": 10,
+      "logo": "img/merli-fn.webp",
+      "rosa": [
+        {"nome": "Grotto", "num": 70, "capitano": true},
+        {"nome": "Mazzilli", "num": 25},
+        {"nome": "Verrusio", "num": 10},
+        {"nome": "Fatjon", "num": 7, "portiere": true},
+        {"nome": "Belingheri", "num": 9},
+        {"nome": "Rossi", "num": 18},
+        {"nome": "Cini", "num": 99},
+        {"nome": "Corti", "num": 21}
+      ]
     },
     {
       "nome": "B.P. Eagles",
@@ -30,7 +54,20 @@
       "s": 0,
       "gf": 3,
       "gs": 2,
-      "logo": "img/bp-eagles.webp"
+      "logo": "img/bp-eagles.webp",
+      "rosa": [
+        {"nome": "Calamia", "num": 24, "capitano": true},
+        {"nome": "Banfi", "num": 53},
+        {"nome": "Damo", "num": 1, "portiere": true},
+        {"nome": "Tassi", "num": 4},
+        {"nome": "Biffi", "num": 91},
+        {"nome": "Spada", "num": 10},
+        {"nome": "Sandrini", "num": 21},
+        {"nome": "Omati", "num": 14},
+        {"nome": "Chri", "num": 7},
+        {"nome": "Ivan", "num": 6},
+        {"nome": "Capo", "num": 67}
+      ]
     },
     {
       "nome": "Sobri & Sinceri",
@@ -40,7 +77,20 @@
       "s": 1,
       "gf": 2,
       "gs": 3,
-      "logo": "img/sobri-sinceri.webp"
+      "logo": "img/sobri-sinceri.webp",
+      "rosa": [
+        {"nome": "Iannone", "num": 27, "capitano": true},
+        {"nome": "Roda'", "num": 2},
+        {"nome": "Jung", "num": 3},
+        {"nome": "Chiappini", "num": 17},
+        {"nome": "Galbiati", "num": 9},
+        {"nome": "Barbato", "num": 7},
+        {"nome": "Conti", "num": 10},
+        {"nome": "Mastroianni", "num": 12},
+        {"nome": "Spadone", "num": 69},
+        {"nome": "Manzoni", "num": 44},
+        {"nome": "Morassi", "num": 11}
+      ]
     },
     {
       "nome": "Titani",
@@ -50,7 +100,19 @@
       "s": 1,
       "gf": 5,
       "gs": 7,
-      "logo": "img/titani.webp"
+      "logo": "img/titani.webp",
+      "rosa": [
+        {"nome": "Toma", "num": 9, "capitano": true},
+        {"nome": "Caprio", "num": 11},
+        {"nome": "Sala", "num": 45},
+        {"nome": "D'Addato", "num": 99},
+        {"nome": "Origgi", "num": 23},
+        {"nome": "Bo", "num": 12},
+        {"nome": "Schiavolin", "num": 19},
+        {"nome": "Buthe", "num": 7, "portiere": true},
+        {"nome": "Ripo", "num": 34},
+        {"nome": "Cortazzo", "num": 10}
+      ]
     },
     {
       "nome": "Jägermaister",
@@ -60,7 +122,18 @@
       "s": 2,
       "gf": 10,
       "gs": 16,
-      "logo": "img/jagermaister.webp"
+      "logo": "img/jagermaister.webp",
+      "rosa": [
+        {"nome": "Frisenda", "num": 8, "capitano": true},
+        {"nome": "Detoma", "num": 10},
+        {"nome": "Pelle", "num": 21},
+        {"nome": "Pirovano", "num": 16},
+        {"nome": "Chiodi", "num": 3},
+        {"nome": "Deli", "num": 9},
+        {"nome": "Borgo", "num": 7},
+        {"nome": "Ruffo", "num": 4},
+        {"nome": "Crippa", "num": null, "portiere": true}
+      ]
     }
   ],
   "marcatori": [
