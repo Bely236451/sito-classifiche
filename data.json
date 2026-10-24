@@ -4,12 +4,12 @@
   "squadre": [
     {
       "nome": "Lo§tallones",
-      "pg": 1,
+      "pg": 2,
       "v": 1,
       "p": 0,
-      "s": 0,
-      "gf": 9,
-      "gs": 4,
+      "s": 1,
+      "gf": 10,
+      "gs": 10,
       "logo": "img/lostallones.webp",
       "rosa": [
         {"nome": "Rogazzo", "num": 21, "capitano": true},
@@ -17,7 +17,7 @@
         {"nome": "Cuzzilla", "num": 17},
         {"nome": "Sorrentino", "num": 7},
         {"nome": "Chiarini", "num": 27},
-        {"nome": "Zancanari", "num": 10},
+        {"nome": "Zancanaro", "num": 10},
         {"nome": "Ligato", "num": 26},
         {"nome": "Minta", "num": 4},
         {"nome": "Spreafico", "num": 1},
@@ -48,15 +48,15 @@
     },
     {
       "nome": "B.P. Eagles",
-      "pg": 1,
-      "v": 1,
+      "pg": 2,
+      "v": 2,
       "p": 0,
       "s": 0,
-      "gf": 3,
-      "gs": 2,
+      "gf": 9,
+      "gs": 3,
       "logo": "img/bp-eagles.webp",
       "rosa": [
-        {"nome": "Calamia", "num": 24, "capitano": true},
+        {"nome": "Calamia", "num": 17, "capitano": true},
         {"nome": "Banfi", "num": 53},
         {"nome": "Damo", "num": 1, "portiere": true},
         {"nome": "Tassi", "num": 4},
@@ -71,12 +71,12 @@
     },
     {
       "nome": "Sobri & Sinceri",
-      "pg": 1,
-      "v": 0,
+      "pg": 2,
+      "v": 1,
       "p": 0,
       "s": 1,
-      "gf": 2,
-      "gs": 3,
+      "gf": 18,
+      "gs": 8,
       "logo": "img/sobri-sinceri.webp",
       "rosa": [
         {"nome": "Iannone", "num": 27, "capitano": true},
@@ -94,12 +94,12 @@
     },
     {
       "nome": "Titani",
-      "pg": 1,
+      "pg": 2,
       "v": 0,
       "p": 0,
-      "s": 1,
-      "gf": 5,
-      "gs": 7,
+      "s": 2,
+      "gf": 10,
+      "gs": 23,
       "logo": "img/titani.webp",
       "rosa": [
         {"nome": "Toma", "num": 9, "capitano": true},
@@ -163,24 +163,24 @@
       "gol": 3
     },
     {
-      "giocatore": "Borgo",
-      "squadra": "Jägermaister",
-      "gol": 2
-    },
-    {
-      "giocatore": "Sorrentino",
-      "squadra": "Lo§tallones",
-      "gol": 2
-    },
-    {
-      "giocatore": "Chri",
+      "giocatore": "Capobianco",
       "squadra": "B.P. Eagles",
-      "gol": 2
+      "gol": 3
     },
     {
-      "giocatore": "Fatjon",
-      "squadra": "Merli FN",
-      "gol": 1
+      "giocatore": "Toma",
+      "squadra": "Titani",
+      "gol": 4
+    },
+    {
+      "giocatore": "Conti",
+      "squadra": "Sobri & Sinceri",
+      "gol": 6
+    },
+    {
+      "giocatore": "Spadone",
+      "squadra": "Sobri & Sinceri",
+      "gol": 8
     },
     {
       "giocatore": "Deli",
@@ -228,16 +228,16 @@
         {
           "casa": "Sobri & Sinceri",
           "ospite": "Titani",
-          "data": "2026-10-24",
-          "gc": null,
-          "go": null
+          "data": "2026-10-23",
+          "gc": 16,
+          "go": 5
         },
         {
           "casa": "B.P. Eagles",
           "ospite": "Lo§tallones",
           "data": "2026-10-23",
-          "gc": null,
-          "go": null
+          "gc": 6,
+          "go": 1
         }
       ]
     },
