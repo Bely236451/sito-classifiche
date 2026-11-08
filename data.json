@@ -1,15 +1,15 @@
 {
   "stagione": "2026/2027",
-  "giornata": 2,
+  "giornata": 3,
   "squadre": [
     {
       "nome": "Lo§tallones",
-      "pg": 2,
+      "pg": 3,
       "v": 1,
       "p": 0,
-      "s": 1,
-      "gf": 10,
-      "gs": 10,
+      "s": 2,
+      "gf": 15,
+      "gs": 19,
       "logo": "img/lostallones.webp",
       "rosa": [
         {"nome": "Rogazzo", "num": 21, "capitano": true},
@@ -28,12 +28,12 @@
     },
     {
       "nome": "Merli FN",
-      "pg": 2,
-      "v": 2,
+      "pg": 3,
+      "v": 3,
       "p": 0,
       "s": 0,
-      "gf": 14,
-      "gs": 11,
+      "gf": 23,
+      "gs": 18,
       "logo": "img/merli-fn.webp",
       "rosa": [
         {"nome": "Grotto", "num": 70, "capitano": true},
@@ -48,12 +48,12 @@
     },
     {
       "nome": "B.P. Eagles",
-      "pg": 2,
-      "v": 2,
+      "pg": 3,
+      "v": 3,
       "p": 0,
       "s": 0,
-      "gf": 9,
-      "gs": 3,
+      "gf": 11,
+      "gs": 4,
       "logo": "img/bp-eagles.webp",
       "rosa": [
         {"nome": "Calamia", "num": 17, "capitano": true},
@@ -71,12 +71,12 @@
     },
     {
       "nome": "Sobri & Sinceri",
-      "pg": 2,
+      "pg": 3,
       "v": 1,
       "p": 0,
-      "s": 1,
-      "gf": 18,
-      "gs": 8,
+      "s": 2,
+      "gf": 25,
+      "gs": 17,
       "logo": "img/sobri-sinceri.webp",
       "rosa": [
         {"nome": "Iannone", "num": 27, "capitano": true},
@@ -94,12 +94,12 @@
     },
     {
       "nome": "Titani",
-      "pg": 2,
-      "v": 0,
+      "pg": 3,
+      "v": 1,
       "p": 0,
       "s": 2,
-      "gf": 10,
-      "gs": 23,
+      "gf": 18,
+      "gs": 27,
       "logo": "img/titani.webp",
       "rosa": [
         {"nome": "Toma", "num": 9, "capitano": true},
@@ -116,12 +116,12 @@
     },
     {
       "nome": "Jägermaister",
-      "pg": 2,
+      "pg": 3,
       "v": 0,
       "p": 0,
-      "s": 2,
-      "gf": 10,
-      "gs": 16,
+      "s": 3,
+      "gf": 11,
+      "gs": 18,
       "logo": "img/jagermaister.webp",
       "rosa": [
         {"nome": "Frisenda", "num": 8, "capitano": true},
@@ -138,34 +138,34 @@
   ],
   "marcatori": [
     {
-      "giocatore": "Pirovano",
-      "squadra": "Titani",
-      "gol": 4
+      "giocatore": "Chri",
+      "squadra": "B.P. Eagles",
+      "gol": 3
     },
     {
       "giocatore": "Verrusio",
       "squadra": "Merli FN",
-      "gol": 6
+      "gol": 9
     },
     {
-      "giocatore": "Rossetti",
-      "squadra": "Lo§tallones",
-      "gol": 3
+      "giocatore": "Cortazzo",
+      "squadra": "Titani",
+      "gol": 8
     },
     {
       "giocatore": "Belingheri",
       "squadra": "Merli FN",
-      "gol": 7
+      "gol": 10
     },
     {
-      "giocatore": "Pelle",
-      "squadra": "Jägermaister",
-      "gol": 3
+      "giocatore": "Rossetti",
+      "squadra": "Lo§tallones",
+      "gol": 7
     },
     {
       "giocatore": "Capobianco",
       "squadra": "B.P. Eagles",
-      "gol": 3
+      "gol": 4
     },
     {
       "giocatore": "Toma",
@@ -175,17 +175,17 @@
     {
       "giocatore": "Conti",
       "squadra": "Sobri & Sinceri",
-      "gol": 6
+      "gol": 9
     },
     {
       "giocatore": "Spadone",
       "squadra": "Sobri & Sinceri",
-      "gol": 8
+      "gol": 11
     },
     {
-      "giocatore": "Deli",
-      "squadra": "Jägermaister",
-      "gol": 3
+      "giocatore": "Ripo",
+      "squadra": "Titani",
+      "gol": 4
     }
   ],
   "calendario": [
@@ -247,23 +247,23 @@
         {
           "casa": "B.P. Eagles",
           "ospite": "Jägermaister",
-          "data": "2026-10-30",
-          "gc": null,
-          "go": null
+          "data": "2026-10-29",
+          "gc": 2,
+          "go": 1
         },
         {
           "casa": "Titani",
           "ospite": "Lo§tallones",
-          "data": "2026-10-31",
-          "gc": null,
-          "go": null
+          "data": "2026-11-07",
+          "gc": 9,
+          "go": 5
         },
         {
           "casa": "Sobri & Sinceri",
           "ospite": "Merli FN",
           "data": "2026-11-06",
-          "gc": null,
-          "go": null
+          "gc": 7,
+          "go": 9
         }
       ]
     },
