@@ -39,10 +39,10 @@
         {"nome": "Grotto", "num": 70, "capitano": true},
         {"nome": "Mazzilli", "num": 25},
         {"nome": "Verrusio", "num": 10},
-        {"nome": "Fatjon", "num": 7, "portiere": true},
+        {"nome": "Cini", "num": 3, "portiere": true},
         {"nome": "Belingheri", "num": 9},
         {"nome": "Rossi", "num": 18},
-        {"nome": "Cini", "num": 99},
+        {"nome": "Fatjon", "num": 7},
         {"nome": "Corti", "num": 21}
       ]
     },
@@ -273,7 +273,7 @@
         {
           "casa": "Merli FN",
           "ospite": "B.P. Eagles",
-          "data": "2026-11-14",
+          "data": "2026-11-13",
           "gc": null,
           "go": null
         },

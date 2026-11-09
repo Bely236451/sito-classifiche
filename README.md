@@ -20,3 +20,11 @@ Nei playoff, quando si conoscono le squadre, sostituisci "2ª classificata" ecc.
 
 ## Rosa delle squadre
 In `data.json`, dentro ogni squadra, il campo `rosa` è l'elenco dei giocatori. Ogni riga ha `nome` e `num` (numero di maglia). Aggiungi `"capitano": true` o `"portiere": true` dove serve. Se manca il numero, scrivi `"num": null`. Toccando una squadra in classifica si vede la rosa con numeri, capitano (C) e portieri (POR).
+
+## Funzioni aggiunte
+- **Spareggi in classifica:** a parità di punti decidono scontri diretti (punti e differenza reti nelle partite tra le squadre pari), poi differenza reti totale, poi gol fatti. Gli scontri diretti si leggono dai risultati inseriti in `calendario`, quindi vanno compilati `gc` e `go`.
+- **Statistiche di lega:** calcolate da `gf`, `gs` e `pg` delle squadre.
+- **Squadra del cuore, cerca giocatore:** si basano su `rosa` e restano salvate sul telefono di chi usa il sito.
+- **Promemoria calendario:** genera un file .ics (evento di giornata intera, orario da confermare).
+- **App installabile:** `manifest.webmanifest`, `sw.js` e le icone in `img/`. Serve l'indirizzo https (Netlify/Vercel lo danno). Dopo aver cambiato file, se non vedi le novità ricarica la pagina due volte.
+- **Social:** i link sono in fondo a `index.html`, nel blocco `soc`.
